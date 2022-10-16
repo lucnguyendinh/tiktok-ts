@@ -1,5 +1,11 @@
 import './GlobalStyles.scss';
-const GlobalStyles: React.FC = ({ children }: any): any => {
+
+interface props {
+    children: any;
+}
+
+const GlobalStyles = (props: props) => {
+    const { children } = props;
     return children;
 };
 
